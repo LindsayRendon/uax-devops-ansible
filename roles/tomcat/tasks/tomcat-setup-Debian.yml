@@ -38,8 +38,8 @@
 
 - name: Download Tomcat
   get_url:
-    url: "https://archive.apache.org/dist/tomcat/tomcat-10/v{{ tomcat_version }}/bin/apache-tomcat-{{ tomcat_version }}.tar.gz"
-    dest: "{{ tomcat_archive_dest }}"
+    url: "https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.54/bin/apache-tomcat-10.1.54.tar.gz"
+    dest: /opt/apache-tomcat-10.1.54.tar.gz
 
 - name: Create a tomcat directory
   file:
